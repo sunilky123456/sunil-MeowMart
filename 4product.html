@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sunil ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+              
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="30px" height="30px">
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-- single product details......... -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="imgwh1.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="imgwh1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgwh2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgwh3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgwh4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1> men's half Shirt</h1>
+                <h4>$50.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>small</option>
+                </select>
+                <input type="number" value="1">
+                <!-- .....add to order now..... -->
+                <button class="btn-order" onclick="placeOrder('Red Printed T-shirt', 50.00)">Order Now</button>
+
+
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-indent "></i></h3>
+                <P>Get ready for summer with our stylish and comfortable Summer Vacation T-Shirt! Made from 100% soft
+                    cotton, this T-shirt features a vibrant tropical design perfect for beach outings, vacations, or
+                    casual wear</P>
+            </div>
+        </div>
+    </div>
+
+    <!-- ....title.... -->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Product</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="product-9.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-10.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-11.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-12.jpg">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ..........footer......... -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android And Ios Mobile phone</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo-white.png">
+                    <p> Our Purpose Is To Sustainably Make the pleasure and
+                        benifits of sports Accessible to the many. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful link </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us </h3>
+                    <ul>
+                        <a href="https://www.linkedin.com/in/sunil-kumar-2b8862327">
+                            <li> <i class="fa-brands fa-linkedin"></i> Linkdin</li>
+                        </a>
+                        <a href="https://github.com/sunilky123456">
+                            <li> <i class="fa-brands fa-github"></i> GitHub</li>
+                        </a>
+                        <a href="https://www.instagram.com/sunilsagar650/profilecard/?igsh=N2tobWVuNXpzcXV3">
+                            <li> <i class="fa-brands fa-instagram"></i> Instgram</li>
+                        </a>
+                        <a href="http://www.youtube.com/@4GlobalHub">
+                            <li> <i class="fa-brands fa-youtube"></i>  YouTube</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2024-Easy Made</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- ........for the product gallery.... -->
+
+    <script>
+
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src
+        }
+
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src
+        }
+
+
+
+    </script>
+
+<script>
+    function placeOrder(productName, price) {
+    // Display a confirmation message
+    const confirmation = confirm(`Do you want to order ${productName} for $${price}?`);
+
+    if (confirmation) {
+        // Simulate order processing
+        alert(`🎉 Congratulations! Your order for ${productName} has been placed successfully! �`);
+
+        // Optionally, redirect to a confirmation page
+        // window.location.href = "order-confirmation.html";
+    } else {
+        alert("Order canceled.");
+    }
+}
+</script>
+
+
+
+
+
+</body>
+
+</html>
